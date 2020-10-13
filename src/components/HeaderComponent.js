@@ -8,10 +8,11 @@ class Header extends Component {
         super(props);
 
         this.state = {
-            isNavOpen: false,
+            isNavOpen: true,
         };
 
         this.toggleNav = this.toggleNav.bind(this);
+        this.closeNav = this.closeNav.bind(this);
     }
     
 
@@ -20,30 +21,35 @@ class Header extends Component {
             isNavOpen: !this.state.isNavOpen
         });
     }
-    
 
+    closeNav() {
+        if (this.state.isNavOpen !== true) {
+            this.toggleNav();
+        }
+    }
+    
     render() {
         return (
             <React.Fragment>
-                <Navbar color="light" light sticky="top" expand="md" className="mx-0">
+                <Navbar light sticky="top" expand="md" className="mx-0">
                     <NavbarBrand className="ml-3" href="/#home">
                             <img src="/assets/images/logoTransparente.png" height="100" width="176" alt="Martin Instalaçoes Logo" />
                         </NavbarBrand>
                     <NavbarToggler onClick={this.toggleNav} />
-                    <Collapse isOpen={this.state.isNavOpen} navbar className="justify-content-end mr-3">
+                    <Collapse isOpen={!this.state.isNavOpen} navbar className="justify-content-end mr-3">
                         <Nav navbar>
                             <NavItem>
-                                <NavHashLink onClick={this.toggleNav} smooth className="nav-link mr-3" to="/#home">
+                                <NavHashLink onClick={this.closeNav} smooth className="nav-link mr-3" to="/#home">
                                     <i className="fa fa-home fa-lg i-menu mr-1" /> Home
                                 </NavHashLink>
                             </NavItem>
                             <NavItem>
-                                <NavHashLink onClick={this.toggleNav} smooth className="nav-link mr-3" to="/#directory">
+                                <NavHashLink onClick={this.closeNav} smooth className="nav-link mr-3" to="/#directory">
                                     <i className="fa fa-list fa-lg i-menu mr-1" /> Directory
                                 </NavHashLink>
                             </NavItem>
                             <NavItem>
-                                <NavHashLink onClick={this.toggleNav} smooth className="nav-link" to="/#contact-us">
+                                <NavHashLink onClick={this.closeNav} smooth className="nav-link" to="/#contact-us">
                                     <i className="fa fa-address-card fa-lg i-menu mr-1" /> Contact Us
                                 </NavHashLink>
                             </NavItem>
