@@ -13,12 +13,14 @@ class Header extends Component {
 
         this.toggleNav = this.toggleNav.bind(this);
     }
+    
 
     toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen
         });
     }
+    
 
     render() {
         return (
@@ -31,17 +33,17 @@ class Header extends Component {
                     <Collapse isOpen={this.state.isNavOpen} navbar className="justify-content-end mr-3">
                         <Nav navbar>
                             <NavItem>
-                                <NavHashLink smooth className="nav-link mr-3" to="/#home">
+                                <NavHashLink onClick={this.toggleNav} smooth className="nav-link mr-3" to="/#home">
                                     <i className="fa fa-home fa-lg i-menu mr-1" /> Home
                                 </NavHashLink>
                             </NavItem>
                             <NavItem>
-                                <NavHashLink smooth className="nav-link mr-3" to="/#directory">
+                                <NavHashLink onClick={this.toggleNav} smooth className="nav-link mr-3" to="/#directory">
                                     <i className="fa fa-list fa-lg i-menu mr-1" /> Directory
                                 </NavHashLink>
                             </NavItem>
                             <NavItem>
-                                <NavHashLink smooth className="nav-link" to="/#contact-us">
+                                <NavHashLink onClick={this.toggleNav} smooth className="nav-link" to="/#contact-us">
                                     <i className="fa fa-address-card fa-lg i-menu mr-1" /> Contact Us
                                 </NavHashLink>
                             </NavItem>
