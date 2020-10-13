@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from "react-router-hash-link";
+
 
 import ScrowArrowToTop from './ScrollArrowToTop';
 
@@ -10,10 +11,9 @@ function Footer(props) {
                 <div className="row">             
                     <div className="col-3">
                         <ul className="list-unstyled">
-                            <li ><Link className="footer-link" to='/home'>Home</Link></li>
-                            <li ><Link className="footer-link" to='/directory'>Directory</Link></li>
-                            <li ><Link className="footer-link" to='/aboutus'>About</Link></li>
-                            <li ><Link className="footer-link" to='/contactus'>Contact</Link></li>
+                            <li ><Link className="footer-link" smooth to='/#home'>Home</Link></li>
+                            <li ><Link className="footer-link" smooth to='/#directory'>Directory</Link></li>
+                            <li ><Link className="footer-link" smooth to='/#contact-us'>Contact</Link></li>
                         </ul>
                     </div>
                     <div className="col-3 text-center">
