@@ -16,7 +16,7 @@ const MainPage = () => {
             <div id="directory">
                 <Directory />
             </div>
-            <div id="project">
+            <div id="projetos">
                 <Project />
             </div>
         </>
@@ -30,7 +30,7 @@ function Main() {
             <Switch>
                 <Route exact path='/' component={MainPage} />
             </Switch>
-            <div id="contact-us">
+            <div id="contato">
                 <Footer/>
             </div> 
         </div>
