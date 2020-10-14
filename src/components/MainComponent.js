@@ -5,7 +5,7 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Directory from './DirectoryComponent';
-import ContactUs from './ContactUsComponent';
+import Project from './ProjectComponent';
 
 const MainPage = () => {
     return (
@@ -16,8 +16,8 @@ const MainPage = () => {
             <div id="directory">
                 <Directory />
             </div>
-            <div id="contact-us">
-                <ContactUs />
+            <div id="project">
+                <Project />
             </div>
         </>
     );
@@ -30,8 +30,9 @@ function Main() {
             <Switch>
                 <Route exact path='/' component={MainPage} />
             </Switch>
-            
-            <Footer/> 
+            <div id="contact-us">
+                <Footer/>
+            </div> 
         </div>
     );
 }
