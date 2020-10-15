@@ -43,20 +43,19 @@
   display: flex;
   flex-direction: column;
   background-color: #353535;
-  min-height: 70vh;
+  min-height: 45vh;
   display: flex;
   font-size: calc(10px + 2vmin);
 }
 
-.container-footer {
-  margin-top: 50px;
-  margin-bottom: 0px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
 .footer-link {
   font-size: 20px;
+  color: #B2DFDB;
+}
+
+.footer-link-label {
+  font-size: 20px;
+  font-weight: bold;
   color: #B2DFDB;
 }
 
@@ -83,9 +82,9 @@
 /* dev-link */
 
 .dev-link {
-  margin: 0;
   color: #B2DFDB;
   text-decoration: none;
+  font-size: 15px;
   
 }
 
@@ -118,10 +117,12 @@
 Scroll to top
 */
 
+.scroll-container{
+  padding-bottom: 20px;
+}
+
 .scroll-to-top {
-  margin:25px;
   position: relative;
-  left: 50%;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -130,6 +131,7 @@ Scroll to top
   z-index: 1;
 }
 .scroll-to-top .icon {
+  font-size: 15px;
   margin-top: 10px;
   animation: scrollTop 0.5s alternate ease infinite;
 }
@@ -185,4 +187,5 @@ Scroll to top
 
 .contato-container-desc {
   margin-top: 65px;
+  font-size: 10px;
 }

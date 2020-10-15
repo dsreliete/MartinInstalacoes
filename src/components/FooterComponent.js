@@ -1,36 +1,36 @@
 import React from 'react';
 
 import ScrowArrowToTop from './ScrollArrowToTop';
-import Map from './MapComponent';
+// import Map from './MapComponent';
 
 function Footer(props) {
     return (
         <footer className="site-footer">
             <div className="container-footer">
-                <div className="row">
-                    <div className="col-6 ">
-                        <h1 className="text-white">Contato</h1>
-                        <div className="col text-center justify-content-center align-items-center contato-container-desc">
-                            <a role="button" className="btn btn-link footer-link mb-3" href="tel:+12065551234"><i className="fa fa-phone mr-3" />Telefone: 1-206-555-1234</a><br />
-                            <a role="button" className="btn btn-link footer-link mb-5" href="mailto:notreal@notreal.co"><i className="fa fa-envelope-o mr-3" />Email: email@email.com</a>
-                            <div className="d-flex-d-block">
-                                <a className="btn btn-lg btn-social-icon btn-instagram mr-5" href="http://instagram.com/"><i className="fa fa-instagram" /></a>{' '}
-                                <a className="btn btn-lg btn-social-icon btn-facebook" href="http://www.facebook.com/"><i className="fa fa-facebook" /></a>{' '}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6">
-                        <Map/>
-                    </div>
+                <div className="row contato-container-desc justify-content-center align-items-center text-center">
+                    <table className="table table-borderless text-white">
+                        <thead>
+                            <tr className="footer-link-label">
+                                <th scope="col">TELEFONE</th>
+                                <th scope="col">EMAIL</th>
+                                <th scope="col">ENDEREÇO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a role="button" className="btn btn-link footer-link mb-3" href="tel:+12065551234"><i className="fa fa-phone mr-3" />1-206-555-1234</a></td>
+                                <td><a role="button" className="btn btn-link footer-link mb-5" href="mailto:notreal@notreal.co"><i className="fa fa-envelope-o mr-3" />email@email.com</a></td>
+                                <td><p className="footer-link mb-5"><i className="fa fa-map-marker mr-3" />Rua Abranches de Moura, 175<br></br>Vila Moraes, São Paulo - SP<br></br>04251-877</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div className="row">
-                    <div className="col-10 text-center">
-                            <a className="dev-link" href="https://dsreliete.github.io/elirodrigues/">
-                                <img src="/assets/images/logoEli.png" alt="web developer logo" height="30" width="30"/>
-                                <p><small> Todos os direitos reservados. Website desenvolvido por Eliete da Silva Rodrigues</small></p>
-                            </a>
-                    </div>
-                    <div className="col-2">
+                <div className="row text-center">
+                    <a className="dev-link col-11" href="https://dsreliete.github.io/elirodrigues/">
+                        <p> Todos os direitos reservados. Website desenvolvido por: <img src="/assets/images/logoEli.png" alt="web developer logo" className="mx-2" height="20" width="20"/>
+                            Eliete da Silva Rodrigues</p>
+                    </a>
+                    <div className="col-1 scroll-container ">
                         <ScrowArrowToTop />
                     </div>
                 </div>
