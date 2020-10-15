@@ -1,12 +1,12 @@
 import React  from 'react';
 
 
-function Project() {
+function Aboutus() {
     return(
-        <div className="contactus-container">
+        <div className="aboutus-container">
             <div className="row">
                 <div className="col">
-                    <h1> Projeto blabla</h1>
+                    <h1> Quem somos blabla</h1>
                     <h2>Wiskas sache</h2>
                 </div>
             </div>
@@ -14,4 +14,4 @@ function Project() {
     );
 }
 
-export default Project;
+export default Aboutus;

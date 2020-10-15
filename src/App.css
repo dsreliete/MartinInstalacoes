@@ -159,7 +159,7 @@ Scroll to top
   color: #B2DFDB;
 }
 
-.directory-container {
+.aboutus-container {
   margin: 0em;
   background-color: black;
   min-height: 100vh;
@@ -171,7 +171,7 @@ Scroll to top
   color: white;
 }
 
-.contactus-container {
+.portfolio-container {
   margin: 0em;
   background-color: blueviolet;
   min-height: 100vh;

@@ -44,13 +44,18 @@ class Header extends Component {
                                 </NavHashLink>
                             </NavItem>
                             <NavItem>
-                                <NavHashLink onClick={this.closeNav} smooth className="nav-link mr-3" to="/#directory">
-                                    <i className="fa fa-list fa-lg i-menu mr-1" /> Directory
+                                <NavHashLink onClick={this.closeNav} smooth className="nav-link mr-3" to="/#quemsomos">
+                                    <i className="fa fa-comment fa-lg i-menu mr-1" /> Quem Somos
                                 </NavHashLink>
                             </NavItem>
                             <NavItem>
-                                <NavHashLink onClick={this.closeNav} smooth className="nav-link mr-3" to="/#projetos">
-                                    <i className="fa fa-address-card fa-lg i-menu mr-1" /> Projeto
+                                <NavHashLink onClick={this.closeNav} smooth className="nav-link mr-3" to="/#portfolio">
+                                    <i className="fa fa-folder-open fa-lg i-menu mr-1" /> Portfólio
+                                </NavHashLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavHashLink onClick={this.closeNav} smooth className="nav-link mr-3" to="/#clientes">
+                                    <i className="fa fa fa-handshake-o fa-lg i-menu mr-1" /> Clientes
                                 </NavHashLink>
                             </NavItem>
                             <NavItem>

@@ -1,12 +1,12 @@
 import React  from 'react';
 
 
-function Directory() {
+function Portfolio() {
     return(
-        <div className="directory-container">
+        <div className="portfolio-container">
             <div className="row">
                 <div className="col">
-                    <h1> Directory blabla</h1>
+                    <h1> Portfolio blabla</h1>
                     <h2>Wiskas sache</h2>
                 </div>
             </div>
@@ -14,4 +14,4 @@ function Directory() {
     );
 }
 
-export default Directory;
+export default Portfolio;

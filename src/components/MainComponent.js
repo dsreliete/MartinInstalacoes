@@ -4,8 +4,8 @@ import { Switch, Route, withRouter } from 'react-router-dom'
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
-import Directory from './DirectoryComponent';
-import Project from './ProjectComponent';
+import AboutUs from './AboutusComponent';
+import Portfolio from './PortfolioComponent';
 import AnimatedBannerImage from './AnimatedBannerImage';
 
 const MainPage = () => {
@@ -14,12 +14,15 @@ const MainPage = () => {
             <div id="home">
                 <Home text="HOME"/>
             </div>
-            <div id="directory">
-                <Directory />
+            <div id="quemsomos">
+                <AboutUs />
             </div>
             <AnimatedBannerImage />
-            <div id="projetos">
-                <Project />
+            <div id="portfolio">
+                <Portfolio />
+            </div>
+            <div id="clientes">
+                <Home text="Clientes"/>
             </div>
         </>
     );
