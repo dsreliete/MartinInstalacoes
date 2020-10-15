@@ -6,6 +6,7 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Directory from './DirectoryComponent';
 import Project from './ProjectComponent';
+import AnimatedBannerImage from './AnimatedBannerImage';
 
 const MainPage = () => {
     return (
@@ -16,6 +17,7 @@ const MainPage = () => {
             <div id="directory">
                 <Directory />
             </div>
+            <AnimatedBannerImage />
             <div id="projetos">
                 <Project />
             </div>
