@@ -6,7 +6,8 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import AboutUs from './AboutusComponent';
 import Portfolio from './PortfolioComponent';
-import AnimatedBannerImage from './AnimatedBannerImage';
+import ParallaxBannerImage from './ParalaxBannerImage';
+import Clients from './ClientsComponent';
 
 const MainPage = () => {
     return (
@@ -17,12 +18,12 @@ const MainPage = () => {
             <div id="quemsomos">
                 <AboutUs />
             </div>
-            <AnimatedBannerImage />
+            <ParallaxBannerImage />
             <div id="portfolio">
                 <Portfolio />
             </div>
             <div id="clientes">
-                <Home text="Clientes"/>
+                <Clients />
             </div>
         </>
     );
