@@ -68,10 +68,11 @@ class UncontrolledCarousel extends Component {
 			<CarouselItem
 				onExiting={this.onExiting}
 				onExited={this.onExited}
-			key={key}
+				key={key}
 			>
-			<img className="carousel-container-nomargin d-block w-100" src={item.src} alt={item.altText} />
-			<CarouselCaption captionText={item.caption} captionHeader={item.header || item.caption} />
+				<img className="carousel-container-nomargin d-block w-100" src={item.src} alt={item.altText} />
+				<CarouselCaption captionText={item.message} />
+					
 			</CarouselItem>
 		);
 	});
@@ -85,7 +86,7 @@ class UncontrolledCarousel extends Component {
 			{...props}
 		>
 			{indicators && <CarouselIndicators
-			items={items}
+			itemsz={items}
 			activeIndex={props.activeIndex || activeIndex}
 			onClickHandler={goToIndex || this.goToIndex}
 			/>}

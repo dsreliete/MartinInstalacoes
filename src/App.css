@@ -148,7 +148,7 @@ Scroll to top
 
 .carousel-container-nomargin {
   margin: 0 !important;
-  height: 600px;
+  height: auto;
   object-fit: contain;
 }
 
@@ -159,13 +159,27 @@ Scroll to top
   display: flex;
   color: #fff;
   text-align: center;
-  opacity: .5;
+  opacity: .3;
   transition: opacity .15s ease;
   background-color: #000000;
   height: 50px;
   width: 50px;
   top: 50%;  
   margin: 0px 50px;
+}
+
+.carousel-caption {
+  right: 0%;
+  left: 30%;
+  bottom: 10%;
+  padding: 0;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #000000;
+  opacity: .5;
+  color: white !important;
+  text-align: center;
+  padding-left: 50px;
 }
 
 .jumbotron {
