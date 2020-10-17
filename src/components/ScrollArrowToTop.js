@@ -13,7 +13,7 @@ const ScrollToTop = () => {
         }
     }, [pageYOffset]);
 
-    const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    const scrollToTop = () => window.scrollTo({ top: -15, behavior: "smooth" });
 
     if (!visible) {
         return false;
