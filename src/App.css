@@ -145,6 +145,29 @@ Scroll to top
 }
 
 /*section 1 */
+
+.carousel-container-nomargin {
+  margin: 0 !important;
+  height: 600px;
+  object-fit: contain;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  color: #fff;
+  text-align: center;
+  opacity: .5;
+  transition: opacity .15s ease;
+  background-color: #000000;
+  height: 50px;
+  width: 50px;
+  top: 50%;  
+  margin: 0px 50px;
+}
+
 .jumbotron {
   margin: 0em;
   background-color: #009688;
