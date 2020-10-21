@@ -8,7 +8,7 @@ function Footer(props) {
         <footer className="site-footer">
             <div className="container-footer">
                 <div className="row contato-container-desc justify-content-center align-items-center text-center">
-                    <table className="table table-borderless text-white">
+                    <table className="table table-borderless text-white mx-5">
                         <thead>
                             <tr className="footer-link-label">
                                 <th scope="col">TELEFONE</th>
