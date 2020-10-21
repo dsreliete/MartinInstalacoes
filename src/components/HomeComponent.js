@@ -10,8 +10,8 @@ const items = [
     },
     {
       src: '/assets/images/saladeestar.png',
-  	message: "SALA DE ESTAR",
-  	key: '2'
+  	    message: "SALA DE ESTAR",
+  	    key: '2'
     },
     {
         src: '/assets/images/dormitorios.png',
@@ -35,7 +35,7 @@ const items = [
     }
 ];
 
-function Home(props) {
+function Home() {
     return(
         <CaroulselImage items={items} />
     );

@@ -3,7 +3,7 @@ import React  from 'react';
 
 function Clients() {
     return(
-        <div className="portfolio-container">
+        <div className="client-container">
             <div className="row">
                 <div className="col">
                     <h1> Clients blabla</h1>

@@ -72,7 +72,7 @@ class UncontrolledCarousel extends Component {
 			>
 				<img className="carousel-container-nomargin d-block w-100" src={item.src} alt={item.altText} />
 				<CarouselCaption captionText={item.message} />
-					
+
 			</CarouselItem>
 		);
 	});

@@ -13,7 +13,7 @@ const MainPage = () => {
     return (
         <>
             <div id="home">
-                <Home text="HOME"/>
+                <Home/>
             </div>
             <div id="quemsomos">
                 <AboutUs />
