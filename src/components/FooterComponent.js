@@ -6,9 +6,9 @@ import ScrowArrowToTop from './ScrollArrowToTop';
 function Footer(props) {
     return (
         <footer className="site-footer">
-            <div className="container-footer">
+            <div className="container-footer mx-5">
                 <div className="row contato-container-desc justify-content-center align-items-center text-center">
-                    <table className="table table-borderless text-white mx-5">
+                    <table className="table table-borderless text-white">
                         <thead>
                             <tr className="footer-link-label">
                                 <th scope="col">TELEFONE</th>
