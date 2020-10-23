@@ -157,8 +157,8 @@ Scroll to top
   object-fit: contain;
 }
 
-.carousel-control-prev,
 .carousel-control-next {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
   position: absolute;
   z-index: 1;
   display: flex;
@@ -167,8 +167,26 @@ Scroll to top
   opacity: .3;
   transition: opacity .15s ease;
   background-color: #000000;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
+  top: 50%;  
+  margin: 0px 50px;
+}
+
+.carousel-control-prev {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .3;
+  transition: opacity .15s ease;
+  background-color: #000000;
+  height: 40px;
+  width: 40px;
   top: 50%;  
   margin: 0px 50px;
 }
@@ -243,7 +261,8 @@ Scroll to top
   margin-top: 85px;
 }
 
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 700px) {
   .carousel-caption {
     right: 0%;
     left: 30%;
@@ -269,7 +288,7 @@ Scroll to top
     background-color: #000000;
     height: 25px;
     width: 25px;
-    top: 50%;  
+    top: 40%;  
     margin: 0px 25px;
   }
 }

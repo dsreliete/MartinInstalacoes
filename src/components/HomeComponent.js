@@ -1,6 +1,6 @@
 import React  from 'react';
 
-import CaroulselImage from './CarouselImage';
+import CustomCarousel from './CustomCarouselComponent';
 
 const items = [
     {
@@ -37,7 +37,7 @@ const items = [
 
 function Home() {
     return(
-        <CaroulselImage items={items} />
+        <CustomCarousel items={items} />
     );
 }
 
