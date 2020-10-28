@@ -16,21 +16,21 @@ function Aboutus() {
                 <div className="col-6 align-self-center">
                     <div className="row justify-content-center">
                         <div className="photos">
-                            <img src={'/assets/images/saladejogo.JPG'} height='190' width='140' alt=''></img>
+                            <img src={'/assets/images/about/saladejogo.JPG'} height='190' width='140' alt=''></img>
                         </div>
                         <div className="photos">
-                            <img src={'/assets/images/barzinho.JPG'} height='190' width='140' alt=''></img>
+                            <img src={'/assets/images/about/barzinho.JPG'} height='190' width='140' alt=''></img>
                         </div>
                         <div className="photos">
-                            <img src={'/assets/images/banheiro2.JPG'} height='190' width='140' alt=''></img>
+                            <img src={'/assets/images/about/banheiro2.JPG'} height='190' width='140' alt=''></img>
                         </div>
                     </div>
                     <div className=" row justify-content-center">
                         <div className="photos">
-                            <img src={'/assets/images/saladeestar2.JPG'} height='190' width='140' alt=''></img>
+                            <img src={'/assets/images/about/saladeestar2.JPG'} height='190' width='140' alt=''></img>
                         </div>
                         <div className="photos">
-                            <img src={'/assets/images/cozinha2.JPG'} height='190' width='140' alt=''></img>
+                            <img src={'/assets/images/about/cozinha2.JPG'} height='190' width='140' alt=''></img>
                         </div>
                     </div>
                 </div>

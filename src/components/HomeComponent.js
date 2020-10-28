@@ -4,32 +4,32 @@ import CustomCarousel from './CustomCarouselComponent';
 
 const items = [
     {
-        src: '/assets/images/cozinha.png',
+        src: '/assets/images/home/cozinha.png',
         message: "COZINHA SOB MEDIDA",
         key: '1'
     },
     {
-      src: '/assets/images/saladeestar.png',
+      src: '/assets/images/home/saladeestar.png',
   	    message: "SALA DE ESTAR",
   	    key: '2'
     },
     {
-        src: '/assets/images/dormitorios.png',
+        src: '/assets/images/home/dormitorios.png',
         message: "DORMITÓRIO",
         key: '3'
     },
     {
-        src: '/assets/images/banheiro.png',
+        src: '/assets/images/home/banheiro.png',
         message: "BANHEIRO",
         key: '4'
     },
     {
-        src: '/assets/images/espacocomercial.png',
+        src: '/assets/images/home/espacocomercial.png',
         message: "SOLUÇÕES COMERCIAIS",
         key: '5'
     },
     {
-        src: '/assets/images/espacocustomizado.png',
+        src: '/assets/images/home/espacocustomizado.png',
         message: "ESPAÇOS CUSTOMIZADOS",
         key: '6'
     }
