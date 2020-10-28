@@ -8,7 +8,7 @@ class Header extends Component {
         super(props);
 
         this.state = {
-            isNavOpen: true,
+            isNavOpen: true
         };
 
         this.toggleNav = this.toggleNav.bind(this);
@@ -32,7 +32,7 @@ class Header extends Component {
 
         const scrollWidthOffset = (el) => {
             const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-            const yOffset = -120; 
+            const yOffset = -200;
             window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
         }
 

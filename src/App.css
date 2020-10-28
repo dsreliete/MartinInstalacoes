@@ -6,6 +6,7 @@
 
 .navbar {
   background-color: white;
+  text-align: center;
 }
 
 .navbar > .nav-item > .nav-link {
