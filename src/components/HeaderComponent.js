@@ -59,12 +59,12 @@ class Header extends Component {
                             </NavItem>
                             <NavItem>
                                 <NavHashLink onClick={this.closeNav} smooth className="nav-link mr-3" to="/#portfolio" scroll={scrollWidthOffset}>
-                                    <i className="fa fa-folder-open fa-lg i-menu mr-1" /> Portfólio
+                                    <i className="fa fa-picture-o fa-lg i-menu mr-1" /> Portfólio
                                 </NavHashLink>
                             </NavItem>
                             <NavItem>
                                 <NavHashLink onClick={this.closeNav} smooth className="nav-link mr-3" to="/#clientes" scroll={scrollWidthOffset}>
-                                    <i className="fa fa fa-handshake-o fa-lg i-menu mr-1" /> Clientes
+                                    <i className="fa fa fa-users fa-lg i-menu mr-1" /> Clientes
                                 </NavHashLink>
                             </NavItem>
                             <NavItem>
