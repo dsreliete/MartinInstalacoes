@@ -35,7 +35,7 @@ export const galery = [
     },
     {
       src: "/assets/images/portfolio/banheiro/banheiros1.JPG",
-      width: 3,
+      width: 2,
       height: 3
     },
     {
