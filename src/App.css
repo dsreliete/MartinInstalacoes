@@ -229,20 +229,6 @@ Scroll to top
   padding: 20px;
 }
 
-/*section 3 */
-
-.portfolio-container {
-  margin: 0em;
-  background-color: #009688;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 /*section 4 */
 
 .client-container {
