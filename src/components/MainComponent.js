@@ -18,13 +18,13 @@ const MainPage = () => {
             <div id="quemsomos">
                 <AboutUs />
             </div>
-            <ParallaxBannerImage />
             <div id="portfolio">
                 <Portfolio />
             </div>
             <div id="clientes">
                 <Clients />
             </div>
+            <ParallaxBannerImage />
         </>
     );
 }
