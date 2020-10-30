@@ -233,14 +233,14 @@ Scroll to top
 
 .client-container {
   margin: 0em;
-  background-color: white;
+  background-color: #007575;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: white;
 }
 
 .title-section {
