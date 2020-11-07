@@ -5,8 +5,13 @@
 /*Header*/
 
 .navbar {
-  background-color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+  z-index: 2;
+  width: 100%;
+  background:white;
+
 }
 
 .navbar > .nav-item > .nav-link {
@@ -40,28 +45,22 @@
 
 /* footer */
 
-.site-footer {
+.footer {
   display: flex;
   flex-direction: column;
   background-color: #353535;
-  min-height: 45vh;
+  min-height: 35vh;
   display: flex;
   font-size: calc(10px + 2vmin);
 }
 
-.contato-container-desc {
-  margin-top: 65px;
-  font-size: 10px;
+.footer-link-label {
+  font-weight: 900;
+  color: #B2DFDB;
 }
 
 .footer-link {
   font-size: 20px;
-  color: #B2DFDB;
-}
-
-.footer-link-label {
-  font-size: 20px;
-  font-weight: bold;
   color: #B2DFDB;
 }
 
@@ -83,6 +82,18 @@
 
 .footer-link:focus{
   color: #009688;
+}
+
+/* modal map */
+.modal-content {
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  height: 450px;
+}
+
+.modal-body {
+  position: relative;
 }
 
 /* dev-link */
@@ -123,7 +134,9 @@
 Scroll to top
 */
 
-.scroll-container{
+.scroll-container {
+  justify-content: flex-end;
+  display:flex;
   padding-bottom: 20px;
 }
 
@@ -138,9 +151,9 @@ Scroll to top
 }
 .scroll-to-top .icon {
   font-size: 15px;
-  margin-top: 10px;
   animation: scrollTop 0.5s alternate ease infinite;
 }
+
 @keyframes scrollTop {
   from {
       transform: translateY(2px);
@@ -152,58 +165,30 @@ Scroll to top
 
 /*section 1 */
 
-.carousel-container-nomargin {
-  margin: 0 !important;
-  height: auto;
-  object-fit: contain;
-}
-
-.carousel-control-next {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  position: absolute;
-  z-index: 1;
-  display: flex;
+.carousel.carousel-slider .control-arrow {
+  top: 0;
   color: #fff;
-  text-align: center;
-  opacity: .3;
+  font-size: 26px;
+  top: 40%;
+  margin-top: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+  opacity: .5;
+  background-color: #000;
   transition: opacity .15s ease;
-  background-color: #000000;
-  height: 40px;
-  width: 40px;
-  top: 50%;  
-  margin: 0px 50px;
-}
-
-.carousel-control-prev {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-  position: absolute;
   z-index: 1;
-  display: flex;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: .3;
-  transition: opacity .15s ease;
-  background-color: #000000;
-  height: 40px;
-  width: 40px;
-  top: 50%;  
-  margin: 0px 50px;
 }
 
 .carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
   right: 0%;
   left: 30%;
   bottom: 10%;
-  padding: 0;
-  font-size: 40px;
-  font-weight: bold;
-  background-color: #000000;
-  opacity: .5;
-  color: white !important;
-  text-align: center;
-  padding-left: 50px;
+  padding: 20px; 
 }
 
 /* section 2*/
@@ -229,6 +214,9 @@ Scroll to top
   padding: 20px;
 }
 
+/*section 3 */
+
+
 /*section 4 */
 
 .client-container {
@@ -248,34 +236,30 @@ Scroll to top
   margin-top: 85px;
 }
 
+@media (max-width: 575.98px) { 
+  .scroll-container {
+    justify-content: center;
+    display:flex;
+  }
 
-@media screen and (max-width: 700px) {
+  .carousel.carousel-slider .control-arrow {
+    color: #fff;
+    font-size: 26px;
+    top: 20%;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    height: 45px;
+    width: 45px;
+  }
+
+
   .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
     right: 0%;
     left: 30%;
     bottom: 10%;
-    padding: 0;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: #000000;
-    opacity: .5;
-    color: white !important;
-    text-align: center;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    color: #fff;
-    text-align: center;
-    opacity: .3;
-    transition: opacity .15s ease;
-    background-color: #000000;
-    height: 25px;
-    width: 25px;
-    top: 40%;  
-    margin: 0px 25px;
+    padding: 10px;
   }
 }

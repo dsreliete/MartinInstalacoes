@@ -1,5 +1,4 @@
 import React  from 'react';
-
 import CustomCarousel from './CustomCarouselComponent';
 
 const items = [
@@ -9,7 +8,7 @@ const items = [
         key: '1'
     },
     {
-      src: '/assets/images/home/saladeestar.png',
+        src: '/assets/images/home/saladeestar.png',
   	    message: "SALA DE ESTAR",
   	    key: '2'
     },
