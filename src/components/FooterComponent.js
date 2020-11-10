@@ -25,7 +25,7 @@ function Footer(props) {
                     <div className="col-sm-12 col-md-4">
                         <div className="footer-link-label pt-5">
                             <h2>TELEFONE</h2>
-                            <a className="btn btn-link footer-link" href="https://wa.me/5511998624973"><i className="fa fa-whatsapp fa-2x mr-3" />+55 (11) 99862-4973</a>
+                            <a className="btn btn-link footer-link" target="_blank" rel="noopener noreferrer" href="https://wa.me/5511998624973"><i className="fa fa-whatsapp fa-2x mr-3" />+55 (11) 99862-4973</a>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-4 pt-5">
