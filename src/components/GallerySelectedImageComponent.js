@@ -59,12 +59,12 @@ const SelectedImage = ({
   return (
     <div
       style={{ margin, height: photo.height, width: photo.width }}
-      className={!isSelected ? "not-selected" : ""}>
+      className={!isSelected ? "not-selected" : ""}
+      onClick={onOpenLightbox}>
+      
       <img
         alt="photos"
-        {...photo}
-        onClick={onOpenLightbox}
-      />
+        {...photo} />
 
       <div className="middle">
         <div className="image-text">
@@ -87,12 +87,12 @@ const SelectedImage = ({
           display: block;
           width: 100%;
           height: auto;
-          transition: .5s ease;
+          transition: .1s ease in out;
           backface-visibility: hidden;
         }
         
         .middle {
-          transition: .5s ease;
+          transition: .1s ease in out;
           opacity: 0;
           position: absolute;
           top: 50%;
