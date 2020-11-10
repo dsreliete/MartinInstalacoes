@@ -8,6 +8,7 @@ import AboutUs from './AboutusComponent';
 import Portfolio from './PortfolioComponent';
 import ParallaxBannerImage from './ParalaxBannerImage';
 import Clients from './ClientsComponent';
+import FloatNavBar from './FloatNavBarComponent';
 
 const MainPage = () => {
     return (
@@ -39,6 +40,7 @@ function Main() {
             <div id="contato">
                 <Footer/>
             </div> 
+            <FloatNavBar />
         </div>
     );
 }
