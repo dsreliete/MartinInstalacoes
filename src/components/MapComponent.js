@@ -2,11 +2,6 @@ import React, { Component } from "react";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 
 export class MapContainer extends Component {
-    state = {
-        activeMarker: {},
-        selectedPlace: {},
-        showingInfoWindow: false
-    };
 
     render() {
         if (!this.props.loaded) return <div className="text-light">Loading...</div>;
