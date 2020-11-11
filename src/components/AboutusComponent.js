@@ -5,7 +5,7 @@ function Aboutus() {
     return(
         <div className="aboutus-container">
             <div className="row m-5">
-                <div className="col-6 text">
+                <div className="col-md-6 text">
                     <p>A <span style={{color: '#795548'}}> MARTIN</span> <spam style={{color: '#009688'}}>INSTALAÇÕES</spam> produz móveis sob medida com acabamento em alto padrão e excelência no atendimento.</p>
                     <p>Contamos com mais de 15 anos de experiência realizando variados projetos com soluções customizadas para atender com beleza e sofisticação nossos clientes.</p>
                     <p>Possuímos know-how para para execução de projetos residenciais e comerciais com requinte e atenção aos detalhes que garante satisfação de nossos clientes.</p>
@@ -13,7 +13,7 @@ function Aboutus() {
                     <p>Oferecemos ainda projetos customizados para melhor atender às necessidades dos nossos clientes.</p>
                     <p>Visite nossa galeria de fotos e nossas redes sociais para melhor conhecer nosso trabalho.</p>
                 </div>
-                <div className="col-6 align-self-center">
+                <div className="col-md-6 align-self-center">
                     <div className="row justify-content-center">
                         <div className="photos">
                             <img src={'/assets/images/about/saladejogo.JPG'} height='190' width='140' alt=''></img>
