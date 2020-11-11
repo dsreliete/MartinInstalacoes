@@ -13,6 +13,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-images": "^1.1.7",
+    "react-media": "^2.0.0-rc.1",
     "react-parallax": "^3.0.3",
     "react-photo-gallery": "^8.0.0",
     "react-responsive-carousel": "^3.2.10",
