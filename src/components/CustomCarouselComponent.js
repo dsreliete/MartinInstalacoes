@@ -5,7 +5,7 @@ class CustomCarousel extends Component {
     render() {
         const slides = this.props.items.map((item) => {
             return (
-                <div>
+                <div key={item.key}>
                     <img src={item.src} alt={item.altText} />
                     <h4 className="carousel-caption">{item.message}</h4>
                 </div>
