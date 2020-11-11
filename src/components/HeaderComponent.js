@@ -35,7 +35,7 @@ const Header = (props) => {
         <React.Fragment>
             <Navbar light sticky="top" expand="md" className="mx-0">
                 <NavHashLink smooth to="/#home" scroll={scrollWidthOffset}>
-                    <NavbarBrand className="ml-3" href="/#home">
+                    <NavbarBrand className="ml-3" href="/#home" onClick={closeNav}>
                         <img src="/assets/images/logoTransparente.png" height="100" width="176" alt="Martin Instalaçoes Logo" />
                     </NavbarBrand>
                 </NavHashLink>
