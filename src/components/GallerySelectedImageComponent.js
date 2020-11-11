@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import { useMedia } from 'react-media';
 
 const SelectedImage = ({ 
     photo,
@@ -13,8 +14,13 @@ const SelectedImage = ({
     photosKitchen,
     photosLaundry,
 }) => {
+    const GLOBAL_MEDIA_QUERIES = {
+        small: "(max-width: 599px)",
+        medium: "(min-width: 600px) and (max-width: 1199px)",
+        large: "(min-width: 1200px)"
+    };
+    const matches = useMedia({ queries: GLOBAL_MEDIA_QUERIES });
 
-    const [isSelected, setIsSelected] = useState(false);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
     const [imageCollection, setImageCollection] = useState([]);
 
@@ -22,12 +28,10 @@ const SelectedImage = ({
         const photoGalery = setPhotoGalery(index);
         setImageCollection(photoGalery);
         setViewerIsOpen(true);
-        setIsSelected(true);
     };
 
     const closeLightbox = () => {
         setViewerIsOpen(false);
-        setIsSelected(false);
     };
 
     const setPhotoGalery = (index) => {
@@ -55,8 +59,9 @@ const SelectedImage = ({
 
     return (
 
+
         <div style={{ margin, height: photo.height, width: photo.width }}
-            className={!isSelected ? "not-selected" : ""}>
+            className={matches.small ? "non-selectable-container" : "selectable-container"}>
 
             <img alt={photo.title} {...photo} onClick={handleOnClick}/>
             <div className="middle">
@@ -67,12 +72,22 @@ const SelectedImage = ({
             </div>
 
             <style>{`
-                .not-selected:hover{
+
+                .non-selectable-container {
+                    opacity: 0.6;
+                    position:relative;
+                }
+
+                .non-selectable-container .middle {
+                    opacity:1;
+                }
+
+                .selectable-container:hover{
                     opacity:0.60; 
                     position: relative;
                 }
 
-                .not-selected:hover .middle {
+                .selectable-container:hover .middle {
                     opacity: 1;
                 }
 
