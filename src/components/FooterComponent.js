@@ -37,7 +37,7 @@ function Footer(props) {
                     <div className="col-sm-12 col-md-4 py-5">
                         <div className="footer-link-label" onClick={showMap}>
                             <h3>ENDEREÇO</h3>
-                            <p className="btn footer-link"><i className="fa fa-map-marker fa-2x mr-3" />Rua Abranches de Moura, 175<br></br>Vila Moraes, São Paulo - SP<br></br>04251-877</p>
+                            <p className="btn footer-link"><i className="fa fa-map-marker fa-2x mr-3" />Rua Edmundo de Carvalho, 59<br></br>Vila Natália, São Paulo - SP<br></br>04251-000</p>
                         </div>
                     </div>
                 </div>

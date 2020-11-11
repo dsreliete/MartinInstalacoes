@@ -19,12 +19,12 @@ export class MapContainer extends Component {
                     "display": "inherit",
                     "overflow": "hidden"
                 }}
-                initialCenter={{ lat: -23.631086, lng: -46.605308 }}>
+                initialCenter={{ lat: -23.624545, lng: -46.599064 }}>
 
                     <Marker 
                         title={'Martin Instalações em geral e Marcenaria'}
                         name={'Martin Instalações em geral e Marcenaria'}
-                        position={{ lat: -23.631086, lng: -46.605308 }}/>
+                        position={{ lat: -23.624545, lng: -46.599064 }}/>
                 </Map>
         );
     }
